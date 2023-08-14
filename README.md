@@ -4,9 +4,9 @@
 
 ## 1. Description
 How a search engine works:
-- The names of the files that the search engine will search for are set in the configuration file [`config.json`](https://github.com/vimcomes/search_engine/blob/master/config.json), before starting the application.
-- The search engine independently bypasses all the files in the [`config.json`](https://github.com/vimcomes/search_engine/blob/master/config.json) and indexes them to find the most relevant documents for any search query.
-- The user sets a request through a JSON file [`requests.json`](https://github.com/vimcomes/search_engine/blob/master/requests.json). The query consists of the words you need to find in the documents.
+- The names of the files that the search engine will search for are set in the configuration file [`config.json`](https://github.com/vimcomes/SearchEngine/blob/master/config.json), before starting the application.
+- The search engine independently bypasses all the files in the [`config.json`](https://github.com/vimcomes/SearchEngine/blob/master/config.json) and indexes them to find the most relevant documents for any search query.
+- The user sets a request through a JSON file [`requests.json`](https://github.com/vimcomes/SearchEngine/blob/master/requests.json). The query consists of the words you need to find in the documents.
 - The request is converted into a list of unique words. Compiles a list of documents that contain these words.
 - Search results are ranked and sorted and the top 5 results displayed to the user.
 - At the end, the program generates a file `answers.json`, writes the search results into it.
