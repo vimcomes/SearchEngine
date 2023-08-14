@@ -52,7 +52,7 @@ To build the project to be installed:
 
 ### 3.2 Launch preparation
 
-- For the program to work correctly, it is necessary that the executable file be in the same directory as the files: [`config.json`](https://github.com/vimcomes/SearchEngine/blob/master/config.json), [`requests.json`](https://github.com/vimcomes/search_engine/blob/main/requests.json).
+- For the program to work correctly, it is necessary that the executable file be in the same directory as the files: [`config.json`](https://github.com/vimcomes/SearchEngine/blob/master/config.json), [`requests.json`](https://github.com/vimcomes/SearchEngine/blob/main/requests.json).
 
 - In order for the search engine to process custom documents, add the path to this document to the "files" list in [`config.json`](https://github.com/vimcomes/SearchEngine/blob/master/config.json):
    ```sh
