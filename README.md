@@ -52,9 +52,9 @@ To build the project to be installed:
 
 ### 3.2 Launch preparation
 
-- For the program to work correctly, it is necessary that the executable file be in the same directory as the files: [`config.json`](https://github.com/vimcomes/search_engine/blob/master/config.json), [`requests.json`](https://github.com/vimcomes/search_engine/blob/main/requests.json).
+- For the program to work correctly, it is necessary that the executable file be in the same directory as the files: [`config.json`](https://github.com/vimcomes/SearchEngine/blob/master/config.json), [`requests.json`](https://github.com/vimcomes/search_engine/blob/main/requests.json).
 
-- In order for the search engine to process custom documents, add the path to this document to the "files" list in [`config.json`](https://github.com/vimcomes/search_engine/blob/master/config.json):
+- In order for the search engine to process custom documents, add the path to this document to the "files" list in [`config.json`](https://github.com/vimcomes/SearchEngine/blob/master/config.json):
    ```sh
    {
        "files": [
@@ -64,10 +64,10 @@ To build the project to be installed:
        ]
    }
    ```
-   > Note: By default, paths to files from the [`resources`](https://github.com/vimcomes/search_engine/tree/master/resources) folder are specified. The executable and the `resources` folder must be in the same directory.
+   > Note: By default, paths to files from the [`resources`](https://github.com/vimcomes/SearchEngine/tree/master/resources) folder are specified. The executable and the `resources` folder must be in the same directory.
 
 
-- The [`requests.json`](https://github.com/vimcomes/search_engine/blob/master/requests.json) file contains custom requests:
+- The [`requests.json`](https://github.com/vimcomes/SearchEngine/blob/master/requests.json) file contains custom requests:
    ```sh
    {
        "requests": [
@@ -79,7 +79,7 @@ To build the project to be installed:
    ```
    > Note: The request can only contain Latin characters.
 
-- The number of responses depends on the "max_responses" parameter, the default is 5. You can change the value in [`config.json`](https://github.com/vimcomes/search_engine/blob/master/config.json).
+- The number of responses depends on the "max_responses" parameter, the default is 5. You can change the value in [`config.json`](https://github.com/vimcomes/SearchEngine/blob/master/config.json).
 
 ### 3.3 Launch
 
