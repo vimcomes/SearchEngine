@@ -4,9 +4,9 @@
 
 ## 1. Description
 How a search engine works:
-- The names of the files that the search engine will search for are set in the configuration file [`config.json`](https://github.com/vimcomes/search_engine/blob/main/config.json), before starting the application.
-- The search engine independently bypasses all the files in the [`config.json`](https://github.com/vimcomes/search_engine/blob/main/config.json) and indexes them to find the most relevant documents for any search query.
-- The user sets a request through a JSON file [`requests.json`](https://github.com/vimcomes/search_engine/blob/main/requests.json). The query consists of the words you need to find in the documents.
+- The names of the files that the search engine will search for are set in the configuration file [`config.json`](https://github.com/vimcomes/search_engine/blob/master/config.json), before starting the application.
+- The search engine independently bypasses all the files in the [`config.json`](https://github.com/vimcomes/search_engine/blob/master/config.json) and indexes them to find the most relevant documents for any search query.
+- The user sets a request through a JSON file [`requests.json`](https://github.com/vimcomes/search_engine/blob/master/requests.json). The query consists of the words you need to find in the documents.
 - The request is converted into a list of unique words. Compiles a list of documents that contain these words.
 - Search results are ranked and sorted and the top 5 results displayed to the user.
 - At the end, the program generates a file `answers.json`, writes the search results into it.
@@ -52,9 +52,9 @@ To build the project to be installed:
 
 ### 3.2 Launch preparation
 
-- For the program to work correctly, it is necessary that the executable file be in the same directory as the files: [`config.json`](https://github.com/vimcomes/search_engine/blob/main/config.json), [`requests.json`](https://github.com/vimcomes/search_engine/blob/main/requests.json).
+- For the program to work correctly, it is necessary that the executable file be in the same directory as the files: [`config.json`](https://github.com/vimcomes/search_engine/blob/master/config.json), [`requests.json`](https://github.com/vimcomes/search_engine/blob/main/requests.json).
 
-- In order for the search engine to process custom documents, add the path to this document to the "files" list in [`config.json`](https://github.com/vimcomes/search_engine/blob/main/config.json):
+- In order for the search engine to process custom documents, add the path to this document to the "files" list in [`config.json`](https://github.com/vimcomes/search_engine/blob/master/config.json):
    ```sh
    {
        "files": [
@@ -64,10 +64,10 @@ To build the project to be installed:
        ]
    }
    ```
-   > Note: By default, paths to files from the [`resources`](https://github.com/vimcomes/search_engine/tree/main/resources) folder are specified. The executable and the `resources` folder must be in the same directory.
+   > Note: By default, paths to files from the [`resources`](https://github.com/vimcomes/search_engine/tree/master/resources) folder are specified. The executable and the `resources` folder must be in the same directory.
 
 
-- The [`requests.json`](https://github.com/vimcomes/search_engine/blob/main/requests.json) file contains custom requests:
+- The [`requests.json`](https://github.com/vimcomes/search_engine/blob/master/requests.json) file contains custom requests:
    ```sh
    {
        "requests": [
@@ -79,7 +79,7 @@ To build the project to be installed:
    ```
    > Note: The request can only contain Latin characters.
 
-- The number of responses depends on the "max_responses" parameter, the default is 5. You can change the value in [`config.json`](https://github.com/vimcomes/search_engine/blob/main/config.json).
+- The number of responses depends on the "max_responses" parameter, the default is 5. You can change the value in [`config.json`](https://github.com/vimcomes/search_engine/blob/master/config.json).
 
 ### 3.3 Launch
 
