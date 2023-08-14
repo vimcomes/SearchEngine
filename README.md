@@ -9,7 +9,7 @@ How a search engine works:
 - The user sets a request through a JSON file [`requests.json`](https://github.com/vimcomes/SearchEngine/blob/master/requests.json). The query consists of the words you need to find in the documents.
 - The request is converted into a list of unique words. Compiles a list of documents that contain these words.
 - Search results are ranked and sorted and the top 5 results displayed to the user.
-- At the end, the program generates a file `answers.json`, writes the search results into it.
+- At the end, the program generates `answers.json` file and writes the search results into it.
 
 ## 2. Tech
 Search engine uses a number of open source projects to work properly:
