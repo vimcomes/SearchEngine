@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
 
 set(PROJECT_NAME SearchEngine)
+
+if(POLICY CMP0135) # From CMake 3.24
+	cmake_policy(SET CMP0135 NEW)
+endif()
+
 project(${PROJECT_NAME})
 
 set(CMAKE_CXX_STANDARD 14)
@@ -8,6 +13,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(JSON_BuildTests OFF CACHE INTERNAL "")
 
 include(FetchContent)
+
 FetchContent_Declare(
 		json
 		URL
