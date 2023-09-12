@@ -9,6 +9,8 @@
 #include "CustomExceptions.h"
 #include "WordHandler.h"
 
+// printing header
+
 void printProgramName (nlohmann::json &config) {
     std::cout << "Started execution ";
 
@@ -25,6 +27,8 @@ void printProgramName (nlohmann::json &config) {
         std::cout << "Max responses: " << config["config"]["max_responses"] << std::endl;
     }
 }
+
+//checking config
 
 void checkConfig(const std::string &configPath) {
     std::ifstream inFile(configPath);
@@ -43,6 +47,8 @@ void checkConfig(const std::string &configPath) {
     printProgramName(inConfig);
 }
 
+//checking request
+
 void checkRequests(const std::string &requestsPath) {
     std::ifstream inFile(requestsPath);
 
@@ -58,6 +64,9 @@ void checkRequests(const std::string &requestsPath) {
     }
 }
 
+//
+// main check
+//
 bool isReadyToStart() {
     try {
         checkConfig("config.json");
@@ -82,6 +91,7 @@ bool isReadyToStart() {
     }
 }
 
+//output
 void printResult(const std::vector<std::vector<RelativeIndex>> &answers) {
     std::cout << std::endl;
 
@@ -103,6 +113,7 @@ void printResult(const std::vector<std::vector<RelativeIndex>> &answers) {
 }
 
 int main() {
+    //check and start
     if (isReadyToStart()) {
         SearchServer searchServer(ConverterJSON::GetTextDocuments(), ConverterJSON::GetResponsesLimit());
 
