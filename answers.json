@@ -1,0 +1,69 @@
+{
+    "answers": {
+        "request001": {
+            "relevance": {
+                "position001": {
+                    "docID": 0,
+                    "rank": 1.0
+                },
+                "position002": {
+                    "docID": 22,
+                    "rank": 1.0
+                }
+            },
+            "result": true
+        },
+        "request002": {
+            "relevance": {
+                "position001": {
+                    "docID": 22,
+                    "rank": 1.0
+                },
+                "position002": {
+                    "docID": 7,
+                    "rank": 0.0026749889366328716
+                },
+                "position003": {
+                    "docID": 14,
+                    "rank": 0.0026749889366328716
+                },
+                "position004": {
+                    "docID": 0,
+                    "rank": 0.0017833259189501405
+                },
+                "position005": {
+                    "docID": 1,
+                    "rank": 0.0017833259189501405
+                }
+            },
+            "result": true
+        },
+        "request003": {
+            "relevance": {
+                "position001": {
+                    "docID": 22,
+                    "rank": 1.0
+                }
+            },
+            "result": true
+        },
+        "request004": {
+            "relevance": {
+                "position001": {
+                    "docID": 22,
+                    "rank": 1.0
+                }
+            },
+            "result": true
+        },
+        "request005": {
+            "relevance": {
+                "position001": {
+                    "docID": 22,
+                    "rank": 1.0
+                }
+            },
+            "result": true
+        }
+    }
+}

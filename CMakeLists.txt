@@ -26,7 +26,8 @@ add_executable(${PROJECT_NAME} src/main.cpp
         src/SearchServer.cpp  include/SearchServer.h
         src/CustomExceptions.cpp include/CustomExceptions.h
         src/WordHandler.cpp include/WordHandler.h
-        )
+        src/CheckOut.cpp include/CheckOut.h
+)
 
 target_include_directories(${PROJECT_NAME} PUBLIC include)
 target_link_libraries(${PROJECT_NAME} PRIVATE nlohmann_json::nlohmann_json)
